@@ -6,9 +6,9 @@
   position: relative;
   width: 100%;
   @include tablet {
-    width: 768px;
+    width: $bp-tablet;
   }
   @include desktop {
-    width: 1680px;
+    width: $bp-desktop;
   }
 }
