@@ -1,9 +1,14 @@
 import React from 'react';
 import testimonialImage from './../../public/assets/person@2x.png';
+import accent from './../../public/assets/accent.svg';
 
 const Testimonial = () => (
   <div className="testimonial">
-    <img src={testimonialImage} title="person" />
+    <div className="testimonial-img-wrapper">
+    <img className="img-accent" src={accent} title="accent stripes" />
+    <img className="img-person" src={testimonialImage} title="person" />
+    </div>
+    
     <div className="testimonial-content">
       <h3 className="testimonial-title">Stanislav Kois</h3>
       <p className="testimonial-subtitle">Rediger Orthodontics</p>

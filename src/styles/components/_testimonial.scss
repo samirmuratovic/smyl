@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 150px 0;
+  position: relative;
   @include desktop {
     flex-direction: row;
   }
@@ -38,14 +39,37 @@
     }
   }
 
-  & img {
+  & .testimonial-img-wrapper {
+    position: relative;
+  }
+  & .img-person {
     height: 320px;
     margin-bottom: 80px;
+    // position: relative;
     width: 327px;
     @include desktop {
       margin-right: 170px;
       height: 538px;
       width: 550px;
+    }
+  }
+  & .img-accent {
+    height: 43px;
+    position: absolute;
+    left: -15px;
+    top: 12px;
+    width: 31px;
+    @include tablet {
+      left: -30px;
+      height: 66px; 
+      width: 39px;
+      top: 0;
+    }
+    @include desktop {
+      left: -20px;
+      height: 77px;
+      top: 8px;
+      width: 46px;
     }
   }
 }
