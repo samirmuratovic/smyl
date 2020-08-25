@@ -1,0 +1,121 @@
+// Colors
+$purple: #3b3343;
+$teal: #3dcfcf;
+
+// Fonts
+$cooper-md: 'Cooper-Md', Helvetica, sans-serif;
+$gilroy-sb: 'Gilroy-Sb', Helvetica, sans-serif;
+$gilroy-md: 'Gilroy-Md', Helvetica, sans-serif;
+$gilroy-rg: 'Gilroy-Rg', Helvetica, sans-serif;
+
+// Layout
+$bp-desktop: 1680px;
+$bp-tablet: 757px;
+$bp-mobile: 414px;
+
+// Media Query Mixins
+@mixin mobile {
+  @media (max-width: $bp-mobile) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: $bp-tablet) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-desktop) { @content; }
+}
+
+// Reset default margins
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: $purple;
+  font-family: $cooper-md;
+}
+
+h1 {
+  font-size: 30px;
+  @include tablet {
+    font-size: 50px;
+  }
+  @include desktop {
+    font-size: 80px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  @include tablet {
+    font-size: 40px;
+  }
+  @include desktop {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  @include tablet {
+    font-size: 35px;
+  }
+  @include desktop {
+    font-size: 38px;
+  }
+}
+
+h4 {
+  font-family: $gilroy-sb;
+  font-size: 20px;
+  @include tablet {
+    font-size: 22px;
+  }
+}
+
+p {
+  color: $purple;
+  font-family: $gilroy-md;
+  font-size: 20px;
+  line-height: 1.5;
+  @include tablet {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: 23px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.grey {
+  color: #99959d;
+}
+
+.cta {
+  background: $teal;
+  border-radius: 10px;
+  color: #fff;
+  font-family: $gilroy-sb;
+  font-size: 18px;
+  padding: 13px 25px;
+  transition: background 250ms ease-in-out;
+
+  &:hover {
+    background: $purple;
+  }
+}
+
+.contain {
+  width: 414px;
+  @include tablet {
+    width: $bp-tablet;
+  }
+  @include desktop {
+    width: $bp-desktop;
+  }
+}

@@ -1,0 +1,10 @@
+.brush {
+  display: none;
+  height: 590px;
+  left: 1211px;
+  position: absolute;
+  top: 794px;
+  @include desktop {
+    display: block;
+  }
+}

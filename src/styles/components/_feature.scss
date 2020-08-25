@@ -1,0 +1,95 @@
+.feature {
+  align-items: center;
+  // background: yellow;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 35px;
+  @include tablet {
+    padding: 0 45px;
+  }
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 200px;
+  }
+
+  & .feature-subtitle {
+    // color: #3b3343;
+    font-family: $gilroy-sb;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  & .feature-p {
+    font-family: 'Gilroy-Md';
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 180px;
+    margin-top: 30px;
+    width: 344px;
+    text-align: left;
+    @include tablet {
+      width: 537px;
+    }
+    @include desktop {
+      margin-bottom: 0;
+      width: 421px;
+    }
+  }
+
+  & .feature-illustration {
+    height: 265px;
+    margin-bottom: 65px;
+    margin-top: 65px;
+    width: 330px;
+    @include tablet {
+      height: 283px;
+      width: 457px;
+    }
+    @include desktop {
+      height: 460px;
+      margin-bottom: 0;
+      margin-top: 0;
+      width: 500px;
+    }
+  }
+}
+
+.purple-bg {
+  background: #3b3343;
+  color: #fff;
+}
+
+.light-bg {
+  background: #deeaea;
+}
+
+.white {
+  color: #fff;
+}
+
+.purple-text {
+  color: #3b3343;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-left-wrapper {
+  margin-right: 50px;
+}
+
+.pad-top {
+  padding-top: 170px;
+}
+
+.wrap-features-1:nth-child(even) {
+  @include desktop {
+    flex-direction: row-reverse;
+  }
+}
+

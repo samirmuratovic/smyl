@@ -1,0 +1,61 @@
+.digital-feature {
+  // background: coral;
+  // margin-right: 30px;
+  // width: 280px;
+  @include tablet {
+    // display: flex;
+    // margin-right: 30px;
+    width: 302px;
+  }
+  & > * {
+    color: #fff;
+  }
+  
+  & .small-divider {
+    background: #a4c2b8;
+    height: 2px;
+    margin-bottom: 22px;
+    margin-top: 75px;
+    width: 344px;
+    @include tablet {
+      width: 302px;
+    }
+    @include desktop {
+
+    }
+  }
+  & .digital-feature-title {
+    font-size: 22px;
+    width: 344px;
+    @include tablet {
+
+    }
+    @include desktop {
+      
+    }
+  }
+  & .digital-feature-description {
+    font-family: $gilroy-rg;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 344px;
+    @include tablet {
+      font-size: 15px;
+      width: 263px;
+    }
+    @include desktop {
+      
+    }
+  }
+}
+
+.digital-feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

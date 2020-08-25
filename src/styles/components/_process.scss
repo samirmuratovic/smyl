@@ -1,0 +1,22 @@
+.process {
+  // background: lightgreen;
+  padding: 180px 35px;
+  @include tablet {
+    padding: 200px 45px;
+  }
+  @include desktop {
+    padding: 210px 200px;
+
+  }
+}
+
+.process-card-wrapper {
+  align-items: flex-start;
+  // background: lightblue;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
+}

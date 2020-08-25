@@ -1,0 +1,51 @@
+.testimonial {
+  align-items: center;
+  background: #fcedca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px 0;
+  @include desktop {
+    flex-direction: row;
+  }
+
+  & .testimonial-content > * {
+    color: $purple;
+    // margin-left: 85px;
+    width: 420px;
+  }
+  & .testimonial-title {
+    font-family: $cooper-md;
+    // font-size: 25px;
+  }
+  & .testimonial-subtitle {
+    color: rgba(59, 51, 67, .8);
+    font-family: $gilroy-md;
+    // font-size: 18px;
+    margin-top: 5px;
+  }
+  & .testimonial-description {
+    font-family: $gilroy-sb;
+    // font-size: 25px;
+    line-height: 1.5;
+    margin-top: 45px;
+    width: 344px;
+    @include tablet {
+      width: 563px;
+    }
+    @include desktop {
+      width: 420px;
+    }
+  }
+
+  & img {
+    height: 320px;
+    margin-bottom: 80px;
+    width: 327px;
+    @include desktop {
+      margin-right: 170px;
+      height: 538px;
+      width: 550px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Cooper-Md';
+  src: url('/src/fonts/Cooper-Md.woff2') format('woff2'),
+       url('/src/fonts/Cooper-Md.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy-Md';
+  src: url('/src/fonts/Gilroy-Md.woff2') format('woff2'),
+       url('/src/fonts/Gilroy-Md.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy-Sb';
+  src: url('/src/fonts/Gilroy-Sb.woff2') format('woff2'),
+       url('/src/fonts/Gilroy-Sb.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy-Rg';
+  src: url('/src/fonts/Gilroy-Rg.woff2') format('woff2'),
+       url('/src/fonts/Gilroy-Rg.otf') format('opentype');
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0 auto;
+}
+
+
+

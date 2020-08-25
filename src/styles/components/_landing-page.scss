@@ -1,0 +1,14 @@
+.container {
+  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
+  
+  position: relative;
+  width: 100%;
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1680px;
+  }
+}

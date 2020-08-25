@@ -1,0 +1,81 @@
+.process-card {
+  background: #fcedca;
+  display: flex;
+  flex-direction: column;
+  // height: 590px;
+  // margin-left: 12px;
+  // margin-right: 12px;
+  margin-bottom: -60px;
+  margin-top: 85px;
+  padding: 100px 35px;
+  // padding-bottom: 60px;
+  
+  // width: 354px;
+
+  @include tablet {
+    align-items: space-between;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 55px 45px;
+    // height: 318px;
+    width: 100%;
+  }
+  @include desktop {
+    flex-direction: column;
+    height: 600px;
+    padding: 60px 40px;
+    width: 404px;
+  }
+  & > * {
+    color: $purple;
+  }
+
+  & img {
+    // background: lightblue;
+    height: 206px;
+    margin: 0 auto;
+    margin-bottom: 61px;
+    // margin-top: 75px;
+    // padding-top: 75px;
+    // width: 206px;
+    @include tablet {
+      height: 179px;
+      margin: 0;
+      width: 144px;
+    }
+    @include desktop {
+      height: 202px;
+      margin: 0 auto;
+      margin-bottom: 61px;
+      width: 162px;
+    }
+  }
+
+  & .process-card-content {
+    // background: coral;
+  }
+  & .process-card-number {
+    font-size: 19px;
+    // margin-top: 61px;
+    // padding-left: 40px;
+  }
+  & .process-card-title {
+    font-family: 'Cooper-Md';
+    font-size: 30px;
+    margin-top: 6px;
+    // padding-left: 40px;
+  }
+  & .process-card-description {
+    font-family: 'Gilroy-Md';
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 30px;
+    // padding-left: 40px;
+    width: 350px;
+    @include tablet {
+      font-size: 18px;
+      width: 303px;
+    }
+  }
+}
+
