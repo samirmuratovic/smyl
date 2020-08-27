@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Feature = (props) => (
-  <div className={`feature wrap-features-1 ${props.bgColor}`}>
+  <div className={`feature features-wrapper-2 ${props.bgColor}`}>
     <div className="feature-left-wrapper">
       <p className={`feature-subtitle ${props.color}`}>{props.subtitle}</p>
       <h3 className={props.color}>{props.title}</h3>

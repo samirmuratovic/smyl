@@ -33,21 +33,19 @@ const Features = () => (
         description={'Make appointment booking quick, easy, and effortless. Convert patients by offering multiple booking options.'}
         illustration={illustration}
       />
-    </div>
-    <div className="purple-bg">
-      {/*<div className="features-wrapper purple-bg pad-top">*/}
       <Feature
         subtitle={'Patient Forms'}
         title={'Digital Convenience'}
         description={'Provide digital patient forms, saving your staff and patient precious time. Make each patient visit more convenient.'}
         illustration={illustration}
-        reverse={'reverse'}
+        bgColor={'purple-bg'}
         color={'white'}
       />
       <Feature
         subtitle={'Patient Education'}
         title={'Show Expertise'}
         description={'Educate patients about the various dental procedures available today. Patients want to know their options and make insightful decisions.'}
+        bgColor={'purple-bg'}
         illustration={illustration}
         color={'white'}
       />
@@ -56,6 +54,7 @@ const Features = () => (
         title={'Your Toolbox'}
         description={'Inform patients about the services you offer. Patients can book their next appointment once they know that you can address their dental problem.'}
         illustration={illustration}
+        bgColor={'purple-bg'}
         color={'white'}
         reverse={'reverse'}
       />

@@ -1,24 +1,30 @@
 .feature {
   align-items: center;
-  background: coral;
+  // background: coral;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 0 auto;
   // padding: 0 35px;
+  width: 100%;
   @include tablet {
+    align-items: flex-start;
     // padding: 0 45px;
   }
   @include laptop {
+    align-items: center;
     flex-direction: row;
     justify-content: flex-start;
     padding: 100px 0px;
   }
+  
 
   & .feature-subtitle {
     // color: #3b3343;
     font-family: $gilroy-sb;
     font-size: 20px;
+
     margin-bottom: 15px;
     text-align: left;
   }
@@ -29,33 +35,40 @@
     line-height: 1.5;
     margin-bottom: 180px;
     margin-top: 30px;
-    width: 344px;
+    // width: 344px;
     text-align: left;
     @include tablet {
-      width: 537px;
+      // width: 537px;
     }
     @include laptop {
       // margin-right: 30px;
       margin-bottom: 0;
-      width: 421px;
+      // width: 421px;
     }
   }
 
   & .feature-illustration {
     height: 265px;
-    margin-bottom: 65px;
-    margin-top: 65px;
-    width: 330px;
+    // margin: 65px 10px;
+    width: 280px;
+    @include mobile {
+      // margin: 0;
+      width: 300px;
+    }
     @include tablet {
+      margin: 80px auto;
       height: 283px;
-      width: 457px;
+      width: 417px;
     }
     @include laptop {
       height: 460px;
-      margin-right: 100px;
+      // margin-right: 100px;
       margin-bottom: 0;
       margin-top: 0;
-      width: 500px;
+      width: 519px;
+    }
+    @include desktop {
+      width: 602px;
     }
   }
 }
@@ -82,17 +95,37 @@
 }
 
 .feature-left-wrapper {
-  background: blue;
-  margin-right: 150px;
+  // background: blue;
+  // display: flex;
+  // flex-direction: column;
+  // margin: 0;
+  // margin-right: 150px;
   // padding: 0 140px;
-  // margin-left: 70px;
+  margin: 0 10px;
+  @include mobile {
+    margin: 0 $mg-mobile;
+  }
+  @include tablet {
+    // justify-content: flex-start;
+    margin: 0 $mg-tablet;
+    padding-top: 75px;
+    width: 537px;
+  }
+  @include laptop {
+    margin: 0 $mg-laptop;
+  }
+  @include desktop {
+    margin: 0 auto;
+    width: 420px;
+  }
 }
 
 .pad-top {
   padding-top: 170px;
 }
 
-.wrap-features-1:nth-child(even) {
+
+.features-wrapper-2:nth-child(even) {
   @include laptop {
     flex-direction: row-reverse;
   }

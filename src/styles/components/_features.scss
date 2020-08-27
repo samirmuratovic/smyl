@@ -1,5 +1,30 @@
 .features {
   background: #deeaea;
+  // margin: 0 auto;
+  // width: 100%;
+}
+
+.features-wrapper {
+  // background: lightgreen;
+  margin: 0;
+  // padding: 0 10px;
+  // width: 100%;
+  @include mobile {
+    // padding: 0 $mg-mobile;
+  }
+  @include tablet {
+    // padding: 0 $mg-tablet;
+  }
+  @include laptop {
+    // padding: 0 $mg-laptop;
+  }
+  @include desktop {
+    // padding: 0 auto;
+    // width: $bp-desktop;
+  }
+}
+.features-wrapper-2 {
+  // background: pink;
   padding: 0 10px;
   @include mobile {
     padding: 0 $mg-mobile;
@@ -11,59 +36,39 @@
     padding: 0 $mg-laptop;
   }
   @include desktop {
-    padding: 0 $mg-desktop;
+    margin: 0 auto;
+    // margin: 0 auto;
+    width: $bp-desktop;
   }
-  // margin-top: 50px;
-  // margin-left: -300px;
-  // padding: 200px 35px;
-  // @include tablet {
-  //   padding: 200px 45px;
-  // }
-  // @include desktop {
-  //   padding: 200px;
-  // }
-}
-
-.features-wrapper {
-  background: lightgreen;
-  // margin-left: -200px;
-  // padding: 200px 0;
-  // padding-right: 200px;
 }
 
 .heading-wrapper {
   align-items: flex-start;
-  background: yellow;
+  // background: yellow;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // padding-left: 10px;
-  // padding-right: 10px;
+  margin: 0 10px;
   padding-bottom: 50px;
   padding-top: 170px;
-  // width: 100%;
+
   @include mobile {
-    // padding-left: $mg-mobile;
-    // padding-right: $mg-mobile;
+    margin: 0 $mg-mobile;
     // width: $bp-mobile;
   }
   @include tablet {
-    // padding-left: $mg-tablet;
-    // padding-right: $mg-tablet;
+    margin: 0 $mg-tablet;
     // width: $bp-tablet;
   }
   @include laptop {
-    // padding-left: $mg-laptop;
-    // padding-right: $mg-laptop;
-    // width: $bp-laptop;
+    margin: 0 $mg-laptop;
     align-items: center;
     flex-direction: row;
+    // width: $bp-laptop;
   }
   @include desktop {
-    
-    // width: $bp-desktop;
-    // padding-left: $mg-desktop;
-    // padding-right: $mg-desktop;
+    margin: 0 auto;
+    width: $bp-desktop;
   }
 }
 
@@ -85,17 +90,21 @@
 .divider {
   background: #c4d5d5;
   height: 3px;
+  margin: 0 10px;
   margin-bottom: 65px;
-  // margin-left: 35px;
-  // margin-right: 35px;
-  // margin-top: 30px;
+  // width: 90%;
+  @include mobile {
+    margin: 0 $mg-mobile;
+    // width: $bp-mobile;
+  }
   @include tablet {
-    // margin-left: 45px;
-    // margin-right: 45px;
+    margin: 0 $mg-tablet;
+  }
+  @include laptop {
+    margin: 0 $mg-laptop;
   }
   @include desktop {
-    // margin-left: 200px;
-    // margin-right: 200px;
-    margin-top: 55px;
+    margin: 0 auto;
+    width: $bp-desktop;
   }
 }
