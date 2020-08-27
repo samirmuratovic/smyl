@@ -4,16 +4,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 150px 0;
+
+  padding: 150px 10px;
   position: relative;
-  @include desktop {
+  @include mobile {
+    padding: 150px $mg-mobile;
+  }
+  @include tablet {
+    padding: 150px $mg-tablet;
+  }
+  @include laptop {
     flex-direction: row;
+    padding: 150px $mg-laptop;
+  }
+  @include desktop {
+    padding: 150px $mg-desktop;
   }
 
+  & .testimonial-content {
+    // background: lightgreen;
+  }
   & .testimonial-content > * {
     color: $purple;
     // margin-left: 85px;
-    width: 420px;
+    // width: 420px;
   }
   & .testimonial-title {
     font-family: $cooper-md;
@@ -30,24 +44,29 @@
     // font-size: 25px;
     line-height: 1.5;
     margin-top: 45px;
-    width: 344px;
+    // width: 344px;
     @include tablet {
       width: 563px;
     }
-    @include desktop {
+    @include laptop {
       width: 420px;
     }
   }
 
   & .testimonial-img-wrapper {
+    // background: coral;
     position: relative;
   }
   & .img-person {
-    height: 320px;
+    height: auto;
     margin-bottom: 80px;
     // position: relative;
-    width: 327px;
-    @include desktop {
+    width: 225px;
+    @include mobile {
+      width: 327px;
+    }
+    @include laptop {
+      margin-bottom: 0;
       margin-right: 170px;
       height: 538px;
       width: 550px;
@@ -56,16 +75,20 @@
   & .img-accent {
     height: 43px;
     position: absolute;
-    left: -15px;
-    top: 12px;
+    left: -20px;
+    top: -10px;
     width: 31px;
+    @include mobile {
+      left: -15px;
+      top: 10px;
+    }
     @include tablet {
       left: -30px;
       height: 66px; 
       width: 39px;
       top: 0;
     }
-    @include desktop {
+    @include laptop {
       left: -20px;
       height: 77px;
       top: 8px;

@@ -1,7 +1,11 @@
 .footer {
-  margin: 0 35px;
+  // background: lightgreen;
+  margin: 0 10px;
   padding-bottom: 30px;
   padding-top: 50px;
+  @include mobile {
+    margin: 0 $mg-mobile;
+  }
   @include desktop {
     margin: 0 140px;
   }
@@ -36,7 +40,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 70px;
+  // padding: 0 70px;
+  @include mobile {
+    // padding: 0 30px;
+  }
   @include tablet {
     flex-direction: row;
     justify-content: space-between;

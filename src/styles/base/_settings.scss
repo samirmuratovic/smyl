@@ -10,16 +10,27 @@ $gilroy-rg: 'Gilroy-Rg', Helvetica, sans-serif;
 
 // Layout
 $bp-desktop: 1440px;
+$bp-laptop: 1280px;
 $bp-tablet: 757px;
-$bp-mobile: 414px;
+$bp-mobile: 375px;
+
+// Margins 
+$mg-desktop: 200px;
+$mg-laptop: 120px;
+$mg-tablet: 45px;
+$mg-mobile: 35px;
 
 // Media Query Mixins
 @mixin mobile {
-  @media (max-width: $bp-mobile) { @content; }
+  @media (min-width: $bp-mobile) { @content; }
 }
 
 @mixin tablet {
   @media (min-width: $bp-tablet) { @content; }
+}
+
+@mixin laptop {
+  @media (min-width: $bp-laptop) { @content; }
 }
 
 @mixin desktop {

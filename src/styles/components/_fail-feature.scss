@@ -1,15 +1,22 @@
 .fail-feature {
+  // background: coral;
   border: 1px solid rgba(153,149,157,.4);
   border-radius: 5px;
-  height: 210px;
+  // height: 210px;
   margin-bottom: 20px;
-  padding: 25px;
-  width: 344px;
+  padding: 20px;
+  // width: 344px;
+  @include mobile {
+    width: 344px;
+  }
   @include tablet {
     margin-right: 20px;
-    width: 330px;
+    margin-left: 0px;
+    width: 329px;
   }
-  @include desktop {
+  @include laptop {
+    margin-left: 0px;
+    margin-right: 20px;
     width: 290px;
   }
 }

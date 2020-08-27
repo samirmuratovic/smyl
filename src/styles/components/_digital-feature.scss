@@ -2,10 +2,15 @@
   // background: coral;
   // margin-right: 30px;
   // width: 280px;
+  // width: 90%;
   @include tablet {
     // display: flex;
-    // margin-right: 30px;
-    width: 302px;
+    margin-right: 25px;
+    width: 280px;
+  }
+  @include desktop {
+    margin-right: 15px;
+    // width: 280px;
   }
   & > * {
     color: #fff;
@@ -16,9 +21,9 @@
     height: 2px;
     margin-bottom: 22px;
     margin-top: 75px;
-    width: 344px;
+    // width: 344px;
     @include tablet {
-      width: 302px;
+      width: 280px;
     }
     @include desktop {
 
@@ -26,7 +31,7 @@
   }
   & .digital-feature-title {
     font-size: 22px;
-    width: 344px;
+    // width: 344px;
     @include tablet {
 
     }
@@ -39,10 +44,10 @@
     font-size: 20px;
     line-height: 1.5;
     margin-top: 10px;
-    width: 344px;
+    // width: 344px;
     @include tablet {
       font-size: 15px;
-      width: 263px;
+      // width: 263px;
     }
     @include desktop {
       
@@ -51,11 +56,15 @@
 }
 
 .digital-feature-wrapper {
+  // background: lightgreen;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   @include tablet {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  @include desktop {
+
   }
 }

@@ -1,17 +1,39 @@
 .failures {
   // background: lightblue;
-  // margin: 0 auto;
+  margin: 0 auto;
   margin-top: 400px;
-  padding: 0 35px;
+  padding: 0 10px;
   padding-bottom: 150px;
+  padding-top: 50px;
+  @include mobile {
+    // margin: 0 $mg-mobile;
+    // margin-top: 400px;
+    padding: 0 35px;
+    padding-bottom: 130px;
+    width: $bp-mobile;
+  }
   @include tablet {
+    // margin: 0 $mg-tablet;
+    // margin-top: 300px;
     padding: 0 45px;
     padding-bottom: 130px;
+    width: $bp-tablet;
+  }
+  @include laptop {
+    // margin: 0 $mg-laptop;
+    // margin-bottom: 100px;
+    margin-top: 620px;
+
+    padding: 0 $mg-laptop;
+    padding-bottom: 130px;
+    width: $bp-laptop;
   }
   @include desktop {
-    margin-top: 300px;
-    padding: 0 200px;
+    // margin: 0 $mg-desktop;
+    // margin-top: 440px;
+    padding: 0 $mg-desktop;
     padding-bottom: 130px;
+    width: $bp-desktop;
   }
 
   & .feature-wrapper {
@@ -19,14 +41,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    // margin: 0 auto;
     margin-top: 50px;
     @include tablet {
       justify-content: flex-start;
-      width: 930px;
+      // width: $bp-tablet;
+      width: 700px;
+    }
+    @include laptop {
+      justify-content: flex-start;
+      width: 1000px;
+      // width: $bp-laptop;
     }
     @include desktop {
-      justify-content: flex-start;
-      width: 930px;
+      
     }
   }
 }

@@ -1,11 +1,17 @@
 .process {
   // background: lightgreen;
-  padding: 180px 35px;
+  padding: 180px 10px;
+  @include mobile {
+    padding: 180px $mg-mobile;
+  }
   @include tablet {
-    padding: 200px 45px;
+    padding: 200px $mg-tablet;
+  }
+  @include laptop {
+    padding: 200px $mg-laptop;
   }
   @include desktop {
-    padding: 210px 200px;
+    padding: 210px $mg-desktop;
 
   }
 }
@@ -18,5 +24,6 @@
   flex-direction: column;
   @include desktop {
     flex-direction: row;
+    justify-content: flex-start;
   }
 }

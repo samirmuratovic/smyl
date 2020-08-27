@@ -9,7 +9,7 @@
   margin-top: 85px;
   padding: 100px 35px;
   // padding-bottom: 60px;
-  
+  width: 100%;
   // width: 354px;
 
   @include tablet {
@@ -18,11 +18,17 @@
     justify-content: space-between;
     padding: 55px 45px;
     // height: 318px;
-    width: 100%;
+    width: 678px;
+  }
+  @include laptop {
+    justify-content: flex-end;
+    width: 1040px;
   }
   @include desktop {
     flex-direction: column;
+    justify-content: space-between;
     height: 600px;
+    margin-right: 20px;
     padding: 60px 40px;
     width: 404px;
   }
@@ -53,6 +59,12 @@
 
   & .process-card-content {
     // background: coral;
+    @include laptop {
+      margin-right: 250px;
+    }
+    @include desktop {
+      margin-right: 0;
+    }
   }
   & .process-card-number {
     font-size: 19px;
@@ -71,10 +83,13 @@
     line-height: 1.5;
     margin-top: 30px;
     // padding-left: 40px;
-    width: 350px;
+    // width: 350px;
     @include tablet {
       font-size: 18px;
       width: 303px;
+    }
+    @include desktop {
+      width: auto;
     }
   }
 }

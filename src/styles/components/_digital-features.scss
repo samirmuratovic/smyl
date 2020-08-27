@@ -1,5 +1,5 @@
 .digital-features {
-  // background: yellow;
+  background: #deeaea;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,8 @@
       padding: 200px 65px;
     }
     @include desktop {
-      padding: 230px 88px;
+      // height: 100%;
+      padding: 230px 40px;
       width: 50%;
     }
   }
@@ -47,7 +48,8 @@
     padding: 180px;
     // width: 50%;
     @include desktop {
-      padding: 264px 0;
+      // height: 100%;
+      padding: auto;
       width: 50%;
     }
 

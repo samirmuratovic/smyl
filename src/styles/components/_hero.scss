@@ -1,17 +1,36 @@
 .hero {
   // background: lightblue;
-  padding: 135px 0;
+  margin: 0 auto;
+  padding: 135px 10px;
+  padding-bottom: 0;
+  // overflow: hidden;
+  position: relative;
   text-align: center;
+  width: 100%;
+  @include mobile {
+    padding: 135px $mg-mobile;
+    width: $bp-mobile;
+  }
   @include tablet {
     padding: 150px 0;
+    padding-bottom: 0;
+    width: $bp-tablet;
+  }
+  @include laptop {
+    padding-bottom: 0;
+    width: $bp-laptop;
   }
   @include desktop {
-  
+    padding-bottom: 0;
+    width: $bp-desktop;
   }
 
   & h1 {
     margin: 0 auto;
-    width: 344px;
+    text-align: center;
+    @include mobile {
+      width: 316px;
+    }
     @include tablet {
       width: 551px;
     }
@@ -23,7 +42,10 @@
   & p {
     margin: 50px auto;
     margin-bottom: 70px;
-    width: 314px;
+    // width: 314px;
+    @include mobile {
+      width: 316px;
+    }
     @include tablet {
       width: 518px;
     }
