@@ -19,7 +19,11 @@
     @include tablet {
       width: auto;
     }
+    @include desktop {
+      margin-left: 15px;
+    }
   }
+  
   & .digital-features-content {
     background: #6a9b88;
     padding: 180px 35px;
@@ -29,7 +33,12 @@
     }
     @include desktop {
       // height: 100%;
-      padding: 230px 40px;
+      // margin: 0 auto;
+      // align-items: center;
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-start;
+      padding: 230px 120px;
       width: 50%;
     }
   }

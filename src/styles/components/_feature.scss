@@ -1,6 +1,6 @@
 .feature {
   align-items: flex-start;
-  // background: coral;
+  background: coral;
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
@@ -24,7 +24,10 @@
     padding: 100px $mg-laptop;
   }
   @include desktop {
+    // justify-content: center;
+    margin: 0 auto;
     padding: 100px $mg-desktop;
+    width: $bp-desktop;
   }
   
   & .feature-title {
