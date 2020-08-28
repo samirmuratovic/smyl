@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="602" height="433" viewBox="0 0 602 433">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_204" data-name="Rectangle 204" width="339" height="269" transform="translate(239 3394)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_203" data-name="Rectangle 203" width="215" height="272" transform="translate(578 3394)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_191" data-name="Group 191" transform="translate(-210 -3338)">
+    <rect id="Rectangle_169" data-name="Rectangle 169" width="602" height="433" rx="10" transform="translate(210 3338)" fill="#fff"/>
+    <rect id="Rectangle_172" data-name="Rectangle 172" width="522" height="2" rx="1" transform="translate(250 3380)" opacity="0.1"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="4" cy="4" r="4" transform="translate(250 3355)" opacity="0.1"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="4" cy="4" r="4" transform="translate(268 3355)" opacity="0.1"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="4" cy="4" r="4" transform="translate(286 3355)" opacity="0.1"/>
+    <rect id="Rectangle_185" data-name="Rectangle 185" width="119" height="80" rx="5" transform="translate(250 3674)" fill="#f2f2f2"/>
+    <rect id="Rectangle_199" data-name="Rectangle 199" width="119" height="80" rx="5" transform="translate(384 3674)" fill="#f2f2f2"/>
+    <rect id="Rectangle_200" data-name="Rectangle 200" width="119" height="80" rx="5" transform="translate(518 3674)" fill="#f2f2f2"/>
+    <rect id="Rectangle_201" data-name="Rectangle 201" width="120" height="80" rx="5" transform="translate(652 3674)" fill="#f2f2f2"/>
+    <g id="Mask_Group_8" data-name="Mask Group 8" clip-path="url(#clip-path)">
+      <rect id="Rectangle_173" data-name="Rectangle 173" width="522" height="255" rx="5" transform="translate(250 3402)" opacity="0.05"/>
+    </g>
+    <g id="Mask_Group_7" data-name="Mask Group 7" clip-path="url(#clip-path-2)">
+      <rect id="Rectangle_205" data-name="Rectangle 205" width="522" height="255" rx="5" transform="translate(250 3402)" fill="#3dcfcf"/>
+    </g>
+    <rect id="Rectangle_202" data-name="Rectangle 202" width="10" height="255" transform="translate(572.512 3402)" fill="#31a6a6"/>
+    <g id="arrow" transform="translate(550 3517.829)">
+      <path id="Path_66" data-name="Path 66" d="M35.021,110.042a1.57,1.57,0,0,1-1.113-.461l-9.447-9.447a1.574,1.574,0,0,1,0-2.227l9.447-9.447a1.575,1.575,0,0,1,2.227,2.227L27.8,99.021l8.334,8.334a1.574,1.574,0,0,1-1.113,2.688Z" transform="translate(-23.999 -87.999)" opacity="0.2"/>
+      <path id="Path_67" data-name="Path 67" d="M297.573,110.042a1.574,1.574,0,0,1-1.113-2.688l8.334-8.334-8.334-8.334a1.575,1.575,0,1,1,2.227-2.227l9.447,9.447a1.575,1.575,0,0,1,0,2.227l-9.447,9.447A1.57,1.57,0,0,1,297.573,110.042Z" transform="translate(-253.989 -87.999)" fill="#31a6a6"/>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 import React from 'react';
-import mushroom from './../../public/assets/mushroom@2x.png';
-import flag from './../../public/assets/flag@2x.png';
-import bird from './../../public/assets/bird@2x.png';
+import consultation from './../../public/assets/consultation.svg';
+import evaluation from './../../public/assets/evaluation.svg';
+import execution from './../../public/assets/execution.svg';
 import ProcessCard from './ProcessCard';
 
 const Process = () => (
@@ -10,19 +10,19 @@ const Process = () => (
     <h2>Through Process.</h2>
     <div className="process-card-wrapper">
       <ProcessCard 
-        illustration={mushroom}
+        illustration={consultation}
         title={'Consultation'}
         number={'01'}
         description={'Lorem ipsum dolor set, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.'}
       />
       <ProcessCard 
-        illustration={bird}
+        illustration={evaluation}
         title={'Evaluation'}
         number={'02'}
         description={'Lorem ipsum dolor set, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.'}
       />
       <ProcessCard 
-        illustration={flag}
+        illustration={execution}
         title={'Execution'}
         number={'03'}
         description={'Lorem ipsum dolor set, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.'}
