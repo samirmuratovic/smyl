@@ -1,28 +1,32 @@
 @font-face {
   font-family: 'Cooper-Md';
-  src: url('/src/fonts/Cooper-Md.woff2') format('woff2'),
-       url('/src/fonts/Cooper-Md.ttf') format('truetype');
   font-weight: 500;
+  src: url('/src/fonts/Cooper-Md.woff2') format('woff2'),
+      url('/src/fonts/Cooper-Md.woff') format('woff'),
+      url('/src/fonts/Cooper-Md.ttf') format('truetype');
+  
+}
+@font-face {
+  font-family: 'Cooper-Lt';
+  src: url('/src/fonts/Cooper-Lt.woff2') format('woff2');
+  font-weight: 300;
 }
 
 @font-face {
   font-family: 'Gilroy-Md';
-  src: url('/src/fonts/Gilroy-Md.woff2') format('woff2'),
-       url('/src/fonts/Gilroy-Md.otf') format('opentype');
+  src: url('/src/fonts/Gilroy-Md.woff2') format('woff2');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Gilroy-Sb';
-  src: url('/src/fonts/Gilroy-Sb.woff2') format('woff2'),
-       url('/src/fonts/Gilroy-Sb.otf') format('opentype');
+  src: url('/src/fonts/Gilroy-Sb.woff2') format('woff2');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Gilroy-Rg';
-  src: url('/src/fonts/Gilroy-Rg.woff2') format('woff2'),
-       url('/src/fonts/Gilroy-Rg.otf') format('opentype');
+  src: url('/src/fonts/Gilroy-Rg.woff2') format('woff2');
   font-weight: normal;
 }
 
@@ -31,12 +35,14 @@
 }
 
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust:100%;
 }
 
 body {
-  // background: lightgreen;
+  -webkit-text-size-adjust: 100%;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased; 
   margin: 0 auto;
   width: 100%;
 }

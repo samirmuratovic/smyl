@@ -58,6 +58,14 @@ h1 {
   }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    h1 {
+      letter-spacing: .7px;
+      font-weight: 300;
+    }
+}
+
 h2 {
   font-size: 30px;
   @include tablet {
@@ -68,6 +76,14 @@ h2 {
   }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    h2 {
+      letter-spacing: .3px;
+      font-weight: 300;
+    }
+}
+
 h3 {
   font-size: 30px;
   @include tablet {
@@ -76,6 +92,14 @@ h3 {
   @include desktop {
     font-size: 38px;
   }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    h3 {
+      letter-spacing: .3px;
+      font-weight: 300;
+    }
 }
 
 h4 {
