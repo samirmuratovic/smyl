@@ -30,6 +30,14 @@
   font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Roboto Mono';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/src/fonts/RobotoMono-Rg.woff2') format('woff2'),
+         url('/src/fonts/RobotoMono-Rg.woff') format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
