@@ -25,6 +25,8 @@
 }
 .features-wrapper-2 {
   // background: pink;
+  
+  
   padding: 0 10px;
   @include mobile {
     padding: 0 $mg-mobile;
@@ -33,10 +35,13 @@
     padding: 0 $mg-tablet;
   }
   @include laptop {
-    padding: 0 $mg-laptop;
+    // display: flex;
+    // justify-content: space-between;
+    // padding: 0 $mg-laptop;
+    // width: $bp-laptop;
   }
   @include desktop {
-    margin: 0 auto;
+    // margin: 0 auto;
     // margin: 0 auto;
     width: $bp-desktop;
   }
@@ -49,7 +54,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 10px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-top: 170px;
 
   @include mobile {
@@ -91,14 +96,17 @@
   background: #c4d5d5;
   height: 3px;
   margin: 0 10px;
-  margin-bottom: 65px;
+  // margin-top: 30px;
+  margin-bottom: 160px;
   // width: 90%;
   @include mobile {
     margin: 0 $mg-mobile;
+    margin-bottom: 160px;
     // width: $bp-mobile;
   }
   @include tablet {
     margin: 0 $mg-tablet;
+    margin-bottom: 160px;
   }
   @include laptop {
     margin: 0 $mg-laptop;

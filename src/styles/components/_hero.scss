@@ -8,7 +8,7 @@
   text-align: center;
   width: 100%;
   @include mobile {
-    padding: 135px $mg-mobile;
+    padding: 135px 10px;
     width: $bp-mobile;
   }
   @include tablet {
@@ -26,10 +26,11 @@
   }
 
   & h1 {
+    // background: pink;
     margin: 0 auto;
     text-align: center;
     @include mobile {
-      width: 316px;
+      width: 335px;
     }
     @include tablet {
       width: 551px;

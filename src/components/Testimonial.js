@@ -12,7 +12,7 @@ const Testimonial = () => (
     <div className="testimonial-content">
       <h3 className="testimonial-title">Stanislav Kois</h3>
       <p className="testimonial-subtitle">Rediger Orthodontics</p>
-      <p className="testimonial-description">An award-winning, best-in-class digital marketing company, their commitment is to take a customized approach to each client so they can best meet your goals.</p>
+      <p className="testimonial-description">Simply the best digital design agency you can work with. They are experts in the dental practice business and have the latest digital solutions to align with your strategy. The turnaround time was incredible and I cannot recommend these guys enough.</p>
     </div>
   </div>
 );

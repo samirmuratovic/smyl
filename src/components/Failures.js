@@ -3,7 +3,7 @@ import FailFeature from './FailFeature';
 
 const Failures = () => (
   <div className="failures">
-    <h2>Most Dental Websites.</h2> 
+    <h2>Dental Websites.</h2> 
     <h2 className="grey">Miss the Mark.</h2> 
     <div className="feature-wrapper">
       <FailFeature 

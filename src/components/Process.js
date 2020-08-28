@@ -13,19 +13,19 @@ const Process = () => (
         illustration={consultation}
         title={'Consultation'}
         number={'01'}
-        description={'Lorem ipsum dolor set, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.'}
+        description={'We provide you with a free website audit and discuss your digital needs. If it makes sense to work together, we create a project timeline and kick the project off.'}
       />
       <ProcessCard 
         illustration={evaluation}
         title={'Evaluation'}
         number={'02'}
-        description={'Lorem ipsum dolor set, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.'}
+        description={'We dig deep and tailor solutions that are specific to your practice and business strategy. We provide you with options and help you pick the one that works best for you.'}
       />
       <ProcessCard 
         illustration={execution}
         title={'Execution'}
         number={'03'}
-        description={'Lorem ipsum dolor set, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.'}
+        description={'Our talented team brings your digital solution to life. From branding to development, we take care of your needs, so you don’t have to waste quality time.'}
       />
     </div>
   </div>

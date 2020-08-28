@@ -21,7 +21,7 @@ const DigitalFeatures = () => (
         />
         <DigitalFeature
           title={'Monthly Maintenance'}
-          description={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat'}
+          description={'Our goal it to become a partner for your web design needs. Do what you do best and let us handle all the digital tasks to keep your site running smoothly.'}
         />
       </div>
 
